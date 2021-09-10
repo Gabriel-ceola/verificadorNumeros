@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios 03/30/2021</title>
+    <br>
+    <input id="nota1" type="number">Primeira nota</input>
+    <br>
+    <br>
+    <input id="nota2" type="number">Segunda nota</input>
+    <button onclick="somar()">Somar</button>
+    <script>
+        function somar(){
+        var nota1 = parseFloat(document.getElementById("nota1").value);
+        var nota2 = parseFloat(document.getElementById("nota2").value);
+        if (nota1+nota2 >= 7.0)
+            alert ("Aprovado")
+            else
+                if (nota1+nota2 < 4.0)
+                     alert ("Reprovado")
+                    else
+                        if (nota1+nota2 < 7.0 & nota1+nota2 >= 4.0)
+                            alert ("Exame");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
